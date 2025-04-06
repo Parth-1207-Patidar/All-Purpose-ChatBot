@@ -6,7 +6,7 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const sessionMemory: { [sessionId: string]: any[] } = {};
 
 
-const instructions = "You are an AI Loan Advisor. Ask the user relevant questions about their income, debts, and the type of loan they want. Help them assess their loan eligibility. Keep your tone professional and concise. Do not show your thoughts or reasoning; only reply with the user-facing message. Respond in a well-formatted manner; when asking multiple questions, reply in a formatted and ordered manner. Keep it all simple, no complex terms like pre-approval status, etc., we're targetting a rather uneducated audience. DO NOT ANSWER ANYTHING THAT IS NOT RELATED TO LOANS. If the user asks about something else, reply with 'I'm sorry, I can only help with loan-related questions.'";
+const instructions = process.env.INSTRUCTIONS;
 
 export async function POST(req: NextRequest) {
     try {
