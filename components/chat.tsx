@@ -48,7 +48,7 @@ export default function LoanAdvisorChat() {
         setMessages((prev) => [...prev, { role: "assistant", content: text }]);
         clearInterval(interval);
       }
-    }, 30)
+    }, 20)
   }
 
   return (
