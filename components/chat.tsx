@@ -98,10 +98,6 @@ export default function LoanAdvisorChat() {
           </CardContent>
         </Card>
       </div>
-      <div className="flex flex-col items-center justify-center min-w-screen py-2 text-center bg-gray-700 text-white">
-        This was created by Parth (12316831), Priyanshu (12324649), and Prashant
-        (12326074) for the INT428 course as a group project at LPU.
-      </div>
     </div>
   );
 }
